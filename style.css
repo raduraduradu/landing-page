@@ -24,7 +24,7 @@ img {
 }
 
 .container {
-  height: 650px;
+  height: 600px;
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -49,7 +49,6 @@ img {
   gap: 40px;
 }
 
-
 #maintext {
   font-size: 48px;
   font-weight: 900;
@@ -70,10 +69,103 @@ button {
   border-radius: 5px;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.info .title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2947;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: -20px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.item {
+  width: 200px;
+  text-align: center;
+}
+.item img {
+  width: 200px;
+  height: auto;
+  border: 3px solid #3370FF;
+  border-radius: 8px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+}
+
+.quote #text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+  margin: 200px;
+  margin-bottom: 25px;
+}
+
+.quote #name {
+  text-align: end;
+  font-size: 36px;
+  font-weight: 700;
+  margin-right: 200px;
+}
+
+.cta.container {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta #bluebox {
+  background-color: #3370FF;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 100px;
+  color: white;
+  border-radius: 10px;
+}
+
+.cta #bluebox button {
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 40px;
+}
+
+.footer {
+  font-size: 15px;
+  justify-content: center;
+}
+
+
 @media screen and (max-width: 1200px) {
   .container,
   .header {
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .item,
+  .item img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .quote #text {
+    margin: 100px;
   }
 }
