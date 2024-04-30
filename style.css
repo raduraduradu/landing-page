@@ -144,11 +144,17 @@ button {
   border: 1px solid white;
   border-radius: 3px;
   height: 40px;
+  padding: 3px 16px;
 }
 
 .footer {
   font-size: 15px;
   justify-content: center;
+  text-align: center;
+}
+
+.footer a {
+  color: #e5e7eb;
 }
 
 
